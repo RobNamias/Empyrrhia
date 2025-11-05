@@ -1,4 +1,67 @@
-/* Disposition scénique des membres (pyramide) */
+/* ------------------- GÉNÉRAL ------------------- */
+@font-face {
+    font-family: 'HauntedHillRegular';
+    src: url('../fonts/HauntedHillRegular-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: #181818 url('../img/WallPaper.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0e0e0;
+    font-family: 'Orbitron', 'Oswald', 'Arial Black', Arial, sans-serif;
+}
+
+/* ------------------- HEADER / LOGO ------------------- */
+
+.logo-img-empyrrhia {
+    max-width: 90vw;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.logo-metal {
+    font-family: 'HauntedHillRegular', 'Orbitron', 'Oswald', 'Arial Black', Arial, sans-serif;
+    letter-spacing: 0.2em;
+    color: #e0e0e0;
+    text-shadow: 0 0 10px #fff, 0 0 20px #8b0a20, 0 0 40px #000;
+}
+
+/* ------------------- BENTO ------------------- */
+
+.bento {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+
+.bento-item {
+    background: linear-gradient(135deg, #232323 60%, #444 100%);
+    border-radius: 1.2rem;
+    box-shadow: 0 4px 24px #000a, 0 1.5px 0 #444;
+    padding: 2rem 1.5rem;
+    transition: transform 0.3s cubic-bezier(.4, 2, .6, 1), box-shadow 0.3s;
+    border: 2px solid #888;
+}
+
+
+.bento-item h2 {
+    font-family: 'HauntedHillRegular', 'Orbitron', 'Oswald', 'Arial Black', Arial, sans-serif;
+    color: #e0e0e0;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+    text-shadow: 0 0 8px #fff2, 0 0 16px #8b0a20, 0 0 2px #000;
+}
+
+/* ------------------- MEMBRES (SCÈNE) ------------------- */
 .members-stage {
     display: flex;
     flex-direction: column;
@@ -33,23 +96,32 @@
     margin-top: -4rem;
     margin-bottom: 0.2rem;
     justify-content: space-around;
-    padding: 0 7vw;
+    padding: 0 10vw;
     display: flex;
     align-items: center;
     z-index: 1;
+}
+
+.member-point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    min-width: 80px;
 }
 
 .member-point .circle {
     width: 38px;
     height: 38px;
     background: #232323;
-    border: 3px solid #888;
+    border: 3px solid #8b0a20;
     border-radius: 50%;
-    box-shadow: 0 2px 8px #0007;
+    box-shadow: 0 2px 8px #8b0a2080;
 }
 
 .member-point .member-name {
-    font-weight: bold;
+    font-weight: 400;
     color: #e0e0e0;
     margin-top: 0.5em;
     font-size: 1.08em;
@@ -77,64 +149,8 @@
     }
 }
 
-/* Timeline horizontale pour les membres */
-.members-timeline {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-between;
-    gap: 1.5rem;
-    margin: 2rem 0 1rem 0;
-    position: relative;
-    overflow-x: auto;
-    padding-bottom: 1.5rem;
-}
+/* ------------------- AUDIO ------------------- */
 
-.members-timeline::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    height: 4px;
-    background: linear-gradient(90deg, #333 0%, #888 100%);
-    z-index: 0;
-    border-radius: 2px;
-}
-
-.member-point {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-    min-width: 80px;
-}
-
-.member-point .circle {
-    width: 32px;
-    height: 32px;
-    background: #232323;
-    border: 3px solid #888;
-    border-radius: 50%;
-    margin-bottom: 0.5em;
-    box-shadow: 0 2px 8px #0007;
-}
-
-.member-point .member-name {
-    font-weight: bold;
-    color: #e0e0e0;
-    margin-bottom: 0.2em;
-    font-size: 1.05em;
-    text-align: center;
-}
-
-.member-point .member-role {
-    color: #aaa;
-    font-size: 0.95em;
-    text-align: center;
-}
-
-/* Player audio largeur 100% */
 #audio-player audio {
     width: 100% !important;
     min-width: 0;
@@ -145,11 +161,11 @@
     display: block;
 }
 
-/* Lecteur audio modernisé */
 #playlist {
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-top: 1rem;
 }
 
 #playlist .playlist-track {
@@ -187,64 +203,7 @@
     color: #232323;
 }
 
-
-
-/* Image logo Empyrrhia Typo responsive */
-.logo-img-empyrrhia {
-    max-width: 90vw;
-    width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-body {
-    background: #181818 url('../img/WallPaper.png') no-repeat center center fixed;
-    background-size: cover;
-    color: #e0e0e0;
-    font-family: 'Oswald', 'Arial Black', Arial, sans-serif;
-}
-
-.logo-metal {
-    font-family: 'Oswald', 'Arial Black', Arial, sans-serif;
-    letter-spacing: 0.2em;
-    color: #e0e0e0;
-    text-shadow: 0 0 10px #fff, 0 0 20px #888, 0 0 40px #000;
-}
-
-.bento {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    justify-content: center;
-}
-
-.bento-item {
-    background: linear-gradient(135deg, #232323 60%, #444 100%);
-    border-radius: 1.2rem;
-    box-shadow: 0 4px 24px #000a, 0 1.5px 0 #444;
-    padding: 2rem 1.5rem;
-    transition: transform 0.3s cubic-bezier(.4, 2, .6, 1), box-shadow 0.3s;
-    border: 2px solid #888;
-}
-
-
-
-.bento-item h2 {
-    color: #e0e0e0;
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
-    text-shadow: 0 0 8px #fff2, 0 0 12px #888;
-}
-
-
-
-#playlist {
-    margin-top: 1rem;
-}
-
-/* Scrollbar custom métal */
+/* ------------------- DIVERS ------------------- */
 ::-webkit-scrollbar {
     width: 8px;
     background: #232323;
