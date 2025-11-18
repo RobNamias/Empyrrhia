@@ -43,7 +43,8 @@ body {
 
 
 .bento-item {
-    background: linear-gradient(135deg, #232323 60%, #444 100%);
+    background: rgba(60, 29, 29, 0.25);
+    backdrop-filter : blur(2px);
     border-radius: 1.2rem;
     box-shadow: 0 4px 24px #000a, 0 1.5px 0 #444;
     padding: 2rem 1.5rem;

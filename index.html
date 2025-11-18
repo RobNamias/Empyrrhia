@@ -17,7 +17,7 @@
         <div class="row bento">
             <div class="row">
                 <div class="col-12 col-md-6 d-flex flex-column gap-4">
-                    <div class="bento-item h-50" id="bio">
+                    <div class="bento-item h-100" id="bio">
                         <h2>Biographie</h2>
                         <p>Empyrrhia, groupe de métal fondé en 2021 à Blois, fusionne puissance, mélodie et atmosphères
                             sombres.<br />
@@ -26,8 +26,29 @@
                             <br />
                             Un voyage sonore intense et viscéral proposé par cinq passionnés de musique.
                         </p>
+                    </div>   
+                </div>
+                <div class="col-12 col-md-6 mt-4 mt-md-0">
+                    <div class="bento-item h-100" id="audio">
+                        <h2>Lecteur Audio</h2>
+                        <div id="audio-player">
+                            <div id="current-track-container" class="mb-2">
+                                <div id="current-track-title" class="marquee"></div>
+                            </div>
+                            <audio id="player" controls>
+                                <source src="" type="audio/mp3">
+                                Votre navigateur ne supporte pas l'audio HTML5.
+                            </audio>
+                            <hr class="playlist-sep" />
+                            <ul id="playlist">
+                            </ul>
+                        </div>
                     </div>
-                    <div class="bento-item h-50" id="members">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="bento-item h-100" id="members">
                         <h2>Membres</h2>
                         <div class="members-stage">
                             <div class="stage-row stage-row-1">
@@ -64,32 +85,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-md-6 mt-4 mt-md-0">
-                    <div class="bento-item h-100" id="audio">
-                        <h2>Lecteur Audio</h2>
-                        <div id="audio-player">
-                            <div id="current-track-container" class="mb-2">
-                                <div id="current-track-title" class="marquee"></div>
-                            </div>
-                            <audio id="player" controls>
-                                <source src="" type="audio/mp3">
-                                Votre navigateur ne supporte pas l'audio HTML5.
-                            </audio>
-                            <hr class="playlist-sep" />
-                            <ul id="playlist">
-                            </ul>
-                        </div>
-                    </div>
-                </div>
             </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="bento-item" id="contact">
-                        <h2>Contacts</h2>
-                        <p>Email : empyrrhia@gmail.com</p>
-                    </div>
-                </div>
-            </div>
+        </div>
+        <div class="footer" id="contact">
+            <h2>Contacts</h2>
+            <p>Email : empyrrhia@gmail.com</p>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

@@ -1,46 +1,14 @@
 [
     {
-        "title": "01 Intro",
-        "file": "assets/music/01 Intro .mp3"
+        "title": "01 Infernal Descent",
+        "file": "assets/music/01 Infernal Descent.mp3"
     },
     {
-        "title": "02 Infernal Descent",
-        "file": "assets/music/02 Infernal Descent.mp3"
+        "title": "02 NightFall Domination",
+        "file": "assets/music/02 NightFall Domination.mp3"
     },
     {
-        "title": "03 Compo 30",
-        "file": "assets/music/03 Compo 30 .mp3"
-    },
-    {
-        "title": "04 Compo 28",
-        "file": "assets/music/04 Compo 28 .mp3"
-    },
-    {
-        "title": "05 Compo 9",
-        "file": "assets/music/05 Compo 9 .mp3"
-    },
-    {
-        "title": "06 Compo 10",
-        "file": "assets/music/06 Compo 10 .mp3"
-    },
-    {
-        "title": "07 Compo 11",
-        "file": "assets/music/07 Compo 11 .mp3"
-    },
-    {
-        "title": "08 Compo 25",
-        "file": "assets/music/08 Compo 25 .mp3"
-    },
-    {
-        "title": "09 Compo 34",
-        "file": "assets/music/09 Compo 34 .mp3"
-    },
-    {
-        "title": "10 Compo 32",
-        "file": "assets/music/10 Compo 32 .mp3"
-    },
-    {
-        "title": "11 La Compo 31 (final)",
-        "file": "assets/music/11 La Compo 31 (final).mp3"
+        "title": "03 Reign of the Rot",
+        "file": "assets/music/03 Reign of the Rot.mp3"
     }
 ]
